@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+   xmlns:p="http://www.springframework.org/schema/p"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+  <bean class="com.springcore.ci.Certi" name="cer">
+   <constructor-arg value="Android Using Kotlin" />
+ 
+ </bean>
+   <bean class="com.springcore.ci.Certi" name="cer2">
+   <constructor-arg value="Android Application Using Java" />
+ 
+ </bean>
+ 
+ 
+ <bean class="com.springcore.ci.Person" name="person">
+  <constructor-arg value="Pranali Uttekar" />
+    <constructor-arg value="12" />
+   <constructor-arg ref="cer" />
+    
+  
+ </bean>
+  <bean class="com.springcore.ci.Person" name="person1">
+  <constructor-arg value="Priyanka Uttekar" />
+    <constructor-arg value="13" />
+   <constructor-arg ref="cer2" />
+    
+  
+ </bean>
+ 
+
+
+</beans>
+ 
+  
+   
+   
